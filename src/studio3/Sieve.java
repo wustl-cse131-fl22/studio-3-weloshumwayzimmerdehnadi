@@ -31,11 +31,11 @@ public class Sieve {
 				for (int j = 2; j < Math.sqrt(i) + 1; j++) {
 					if (i % j == 0) {
 						allNumbers[i] = false;
-					} else {
-						if (allNumbers[i] == true) {
-							System.out.println(i);
-						}
 					}
+				}
+
+				if (allNumbers[i] == true) {
+					System.out.println(i);
 				}
 			}
 
